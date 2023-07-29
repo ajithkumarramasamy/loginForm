@@ -44,7 +44,6 @@ class SignupForm extends Component {
     }
     console.log(formData)
     localStorage.setItem('user', JSON.stringify(formData))
-    alert('Signup successful!')
     const {history} = this.props
     history.replace('/login')
   }
